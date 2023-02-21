@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ItemCard from './ItemCard.svelte';
+	import ItemCard from '../ItemCard.svelte';
 
 	import type { Item } from '$lib/scripts/types';
 	import { onMount } from 'svelte';
@@ -16,7 +16,7 @@
 
 	onMount(() => {
 		if (!data || !data.items) return;
-		items = data.items.filter((item) => item.type === type);
+		items = data.items.filter((item) => item.shoeType === type);
 		// sort by rating
 		items.sort((a, b) => (a.rating > b.rating ? -1 : 1));
         

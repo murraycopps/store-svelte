@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Item } from '$lib/scripts/types';
-	import ItemCard from './ItemCard.svelte';
 	import ItemList from './ItemList.svelte';
 	import ShopCards from './ShopCards.svelte';
 
@@ -24,7 +23,7 @@
 		/>
 	</div>
 	
-	<ItemList data={data} type="shoes" />
-	<ItemList data={data} type="gear" />
-	<ItemList data={data} type="clothes" />
+	<ItemList data={data} type="shoes" oneRow />
+	<ItemList data={data} type="gear" oneRow />
+	<ItemList data={data} type="clothes" oneRow />
 </div>
