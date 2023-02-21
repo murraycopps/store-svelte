@@ -30,9 +30,7 @@
 
 <style lang="postcss">
 	img {
-		filter: blur(10px) brightness(0.5);
-		border-radius: 50%;
-		
+		filter: blur(10px) brightness(0.5);		
 	}
 	section {
 		background: radial-gradient(rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 1) 100%);
