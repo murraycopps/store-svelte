@@ -1,3 +1,0 @@
-<main class="flex flex-col gap-8 p-8">
-    <slot />
-</main>
