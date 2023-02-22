@@ -3,11 +3,10 @@
 
 	let open = false;
 
-    const close = () => {
+	const close = () => {
 		console.log('closing');
-        open = false;
-    }
-    
+		open = false;
+	};
 </script>
 
 <!-- 
@@ -26,7 +25,6 @@
 	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
 	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
 	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
-    
 </button>
 <NavBarContent {open} {close} />
 
@@ -35,6 +33,7 @@
 	span {
 		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
 			background-color 0.3s ease-in-out;
+		box-shadow: 0 0 6px -1px rgba(245, 245, 245, 0.5);
 	}
 
 	.open {

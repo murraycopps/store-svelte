@@ -6,9 +6,9 @@
 	export let data: { items: Item[] };
 </script>
 
-<div class="flex flex-col gap-8 p-8">
+<div class="flex flex-col gap-8 p-4">
 	<h1 class="text-6xl text-center">Shoes</h1>
-	<div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+	<div class="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 md:grid-cols-3">
 		<ShoeType
 			type="trail"
 			image="https://www.tradeinn.com/f/13858/138584722/altra-mont-blanc-trail-running-shoes.jpg"

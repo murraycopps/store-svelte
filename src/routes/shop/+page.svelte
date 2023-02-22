@@ -8,7 +8,7 @@
 
 <div class="flex flex-col gap-8 p-4">
 	<h1 class="text-6xl text-center">Shop</h1>
-	<div class="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 md:grid-cols-3 ">
+	<div class="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 md:grid-cols-3">
 		<ShopCards
 			type="shoes"
 			image="https://ccwh54no.cdn.imgeng.in/media/catalog/product/cache/f9298953e225fe5aa69348b5b4218d7e/1/0/1013A116_400_SR_RT_GLB_PNG_1280x1280_PNG_png.png"
