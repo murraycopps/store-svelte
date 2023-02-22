@@ -6,6 +6,9 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		// interface Platform {}
+		interface HTMLAttributes<T> {
+			"on:click_outside"?: (event: MouseEvent) => void;
+		  }
 	}
 }
 
