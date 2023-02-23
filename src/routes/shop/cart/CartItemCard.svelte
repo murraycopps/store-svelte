@@ -9,12 +9,11 @@
 		[key: string]: string;
 	} = {
 		shoes: 'h-36',
-		clothes: 'h-64',
-		gear: 'h-96'
+		clothes: 'h-48',
+		gear: 'h-48'
 	};
 </script>
 
-<!-- create a small card to ddisplau the item -->
 <div
 	class="relative flex flex-row items-center justify-between w-full gap-4 p-4 text-white bg-purple-800 h-fit-content rounded-3xl cart-item-card"
 >

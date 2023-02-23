@@ -55,6 +55,9 @@ export default class cart {
             }
         }
     }
+    static getTotalPrice(){
+        return 1.06 * this.items.reduce((total, item) => total + item.price * item.cartQuantity, 0);
+    }
     static clearCart() {
         this.items = [];
     }
