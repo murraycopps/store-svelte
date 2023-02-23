@@ -29,7 +29,6 @@
 		<div class="grid w-full grid-cols-3">
 			<p class="text-xl">${item.price}</p>
 			<p class="text-xl">{item.rating}/5</p>
-			<!-- <p class="text-xl text-center">{item.cartQuantity}</p>  same thing but with arrows to increse and decrese the quantity-->
 			<div class="grid w-full grid-cols-3">
 				<button
 					class="w-full h-full"

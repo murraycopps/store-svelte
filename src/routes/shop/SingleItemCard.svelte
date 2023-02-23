@@ -12,7 +12,7 @@
 	};
 </script>
 
-<div class="grid grid-cols-2 p-4 bg-purple-800 width-clamp rounded-4xl">
+<div class={`grid grid-cols-2 p-4 ${item.quantity > 0 ? "bg-purple-800" : "bg-red-500"} width-clamp rounded-4xl`}>
 	<img src={item.image} alt={item.name} class={`object-fit rounded-3xl w-full`} />
 	<div class="flex flex-col justify-between w-full h-full gap-4 p-4 text-white">
 		<div class="flex flex-col w-full gap-8 text-center">
@@ -25,27 +25,31 @@
 			<p class="px-4 text-2xl">
 				{item.description}
 			</p>
-			<div class="flex flex-col w-full gap-4">
-				<div class="flex flex-row items-center w-full gap-4 justify-evenly">
-					<label for="quantity" class="text-2xl">Quantity</label>
-					<input
-						type="number"
-						id="quantity"
-						name="quantity"
-						min="1"
-						max={item.quantity - cart.getQuantity(item.name)}
-						bind:value={quantity}
-						class="w-1/2 px-4 py-2 text-2xl text-black border-2 border-purple-800 rounded-3xl"
-					/>
+			{#if item.quantity > 0}
+				<div class="flex flex-col w-full gap-4">
+					<div class="flex flex-row items-center w-full gap-4 justify-evenly">
+						<label for="quantity" class="text-2xl">Quantity</label>
+						<input
+							type="number"
+							id="quantity"
+							name="quantity"
+							min="1"
+							max={item.quantity - cart.getQuantity(item.name)}
+							bind:value={quantity}
+							class="w-1/2 px-4 py-2 text-2xl text-black border-2 border-purple-800 rounded-3xl"
+						/>
+					</div>
+					<button
+						class="w-full px-4 py-2 text-2xl bg-purple-600 rounded-3xl"
+						on:click={() => {
+							cart.addItem(item, quantity);
+							goto('/shop/cart');
+						}}>Add to Cart</button
+					>
 				</div>
-				<button
-				 class="w-full px-4 py-2 text-2xl bg-purple-600 rounded-3xl"
-				 on:click={() => {
-					 cart.addItem(item, quantity);
-					 goto('/shop/cart');
-				 }}
-				 >Add to Cart</button>
-			</div>
+			{:else}
+				<p class="text-2xl">Out of Stock</p>
+			{/if}
 		</div>
 	</div>
 </div>
