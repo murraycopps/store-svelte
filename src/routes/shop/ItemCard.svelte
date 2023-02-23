@@ -2,6 +2,7 @@
 	import type { Item } from '$lib/scripts/types';
 
 	export let item: Item;
+	export let large: boolean = false;
 
 	const capitalize = (str: string) => {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -9,7 +10,11 @@
 
 	const sizes: {
 		[key: string]: string;
-	} = {
+	} = large ? {
+		shoes: 'h-64',
+		clothes: 'h-128',
+		gear: 'h-136'
+	} : {
 		shoes: 'h-36',
 		clothes: 'h-64',
 		gear: 'h-96'

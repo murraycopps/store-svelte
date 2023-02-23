@@ -10,7 +10,7 @@
 	<div class="grid grid-cols-1 gap-4 p-4 lg:grid-cols-3">
 		{#if data?.items && data.items.length > 0}
 			{#each data.items as item}
-				<ItemCard {item} />
+				<ItemCard {item} large />
 			{/each}
 		{/if}
 	</div>
