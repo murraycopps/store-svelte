@@ -25,7 +25,7 @@
 	href={`/shop/${item.type}/${item.type === 'shoes' && item.shoeType ? item.shoeType + '/' : ''}${
 		item.url
 	}`}
-	class="relative flex flex-col items-center justify-between w-full h-full gap-4 p-4 text-white bg-purple-800 rounded-3xl"
+	class={`relative flex flex-col items-center justify-between w-full h-full gap-4 p-4 text-white ${item.quantity > 0 ? "bg-purple-800" : "bg-red-500"} rounded-3xl`}
 >
 	{#if item.image}
 		<img

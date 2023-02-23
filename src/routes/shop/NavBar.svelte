@@ -9,11 +9,6 @@
 	};
 </script>
 
-<!-- 
-<button
-    class="fixed top-0 left-0 p-4"
-    on:blur={close}
-> -->
 <button
 	class={`flex flex-col justify-between w-8 h-8 py-1 z-50 ${open && 'open'}`}
 	id="nav-button"
@@ -28,12 +23,15 @@
 </button>
 <NavBarContent {open} {close} />
 
-<!-- </button> -->
 <style>
 	span {
 		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
-			background-color 0.3s ease-in-out;
+			background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 		box-shadow: 0 0 6px -1px rgba(245, 245, 245, 0.5);
+	}
+
+	.open > span {
+		box-shadow: none;
 	}
 
 	.open {

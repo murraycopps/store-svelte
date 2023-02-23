@@ -6,7 +6,7 @@
 
 	export let data: { items: Item[] };
 	export let type: string;
-    export let oneRow: boolean = false;
+	export let oneRow: boolean = false;
 
 	const capitalize = (str: string) => {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -16,13 +16,22 @@
 
 	onMount(() => {
 		if (!data || !data.items) return;
-		items = data.items.filter((item) => item.shoeType === type);
-		// sort by rating
-		items.sort((a, b) => (a.rating > b.rating ? -1 : 1));
-        
-		if (items.length > 4 && oneRow) {
-			items = items.slice(0, 4);
-		}
+
+		items = data.items
+			.filter((item) => item.shoeType === type)
+			.sort((a, b) => {
+				if (a.quantity === 0 && b.quantity === 0) {
+					return a.rating > b.rating ? -1 : 1;
+				} else if (a.quantity === 0) {
+					return 1;
+				} else if (b.quantity === 0) {
+					return -1;
+				} else {
+					return a.rating > b.rating ? -1 : 1;
+				}
+			});
+
+		if (items.length > 4 && oneRow) items = items.slice(0, 4);
 	});
 </script>
 
