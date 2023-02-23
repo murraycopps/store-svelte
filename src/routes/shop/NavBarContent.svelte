@@ -16,7 +16,7 @@
 
 <div
 	class={`fixed top-0 bottom-0 left-0 text-white text-xl text-center bg-gray-500 overflow-hidden ${
-		open ? 'w-1/3' : 'w-0'
+		open ? 'w-full sm:w-1/2 lg:w-1/3' : 'w-0'
 	}`}
 	id="nav-bar"
 	use:clickOutside={{ ignore: 'nav-button' }}
