@@ -4,10 +4,10 @@
 </script>
 
 <section
-	class="fixed z-0 flex flex-col items-center justify-center w-screen h-screen gap-12 text-white"
+	class="fixed z-0 flex flex-col items-center justify-center w-screen h-screen gap-12 text-center text-white"
 >
 	<img src={LandingImage} alt="" class="fixed w-screen h-screen cover opacity-20" />
-	<h1 class="z-10 py-2 text-9xl">Running Store</h1>
+	<h1 class="z-10 py-2 text-6xl sm:text-8xl md:text-9xl">Running Store</h1>
 	<p class="z-10 text-2xl">Shop our selection of running shoes, clothes, and gear</p>
 	<Button3D />
 	

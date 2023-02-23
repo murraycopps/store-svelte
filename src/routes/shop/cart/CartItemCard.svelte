@@ -21,7 +21,7 @@
 		<img
 			src={item.image}
 			alt={item.name}
-			class={`object-cover rounded-3xl w-full aspect-square ${sizes[item.type]}`}
+			class={`object-cover w-full rounded-3xl ${sizes[item.type]} ${item.type}}`}
 		/>
 	{/if}
 	<div class="flex flex-col w-full h-full gap-4 text-center justify-evenly">
@@ -88,6 +88,16 @@
 </div>
 
 <style>
+
+	.shoes {
+		aspect-ratio: 2;
+	}
+	.clothes {
+		aspect-ratio: 4 / 5;
+	}
+	.gear {
+		aspect-ratio: 3 / 4;
+	}
 	.cart-item-card {
 		width: clamp(400px, 50vw, 600px);
 	}

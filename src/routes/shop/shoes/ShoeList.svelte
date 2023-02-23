@@ -38,7 +38,7 @@
 <div class="p-8 text-4xl text-white bg-blue-600 section-label">
 	<h2>{capitalize(type)}</h2>
 </div>
-<section class="grid grid-cols-2 gap-4 p-4 lg:grid-cols-4">
+<section class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
 	{#if items && items.length !== 0}
 		{#each items as item}
 			<ItemCard {item} />
