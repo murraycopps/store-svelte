@@ -25,11 +25,18 @@
 						).toFixed(2)}
 					</h2>
 				</div>
-				<a
-					href="/shop/checkout"
-					class="px-12 py-4 text-2xl font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600"
-					>Checkout</a
-				>
+				<div class="grid grid-cols-1 gap-4 text-center bg-gray-100 rounded-lg lg:grid-cols-2 button-container-width">
+					<a
+						href="/shop/checkout"
+						class="px-12 py-4 text-2xl font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600"
+						>Checkout</a
+					>
+					<a
+						href="/shop"
+						class="px-12 py-4 text-2xl font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600"
+						>Go to shop</a
+					>
+				</div>
 			{:else}
 				<h1 class="text-3xl font-bold">Cart is empty</h1>
 				<a
@@ -41,3 +48,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.button-container-width {
+		width: clamp(400px, 50vw, 600px);
+	}
+</style>

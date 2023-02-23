@@ -29,7 +29,7 @@
 	};
 </script>
 
-<section class="flex flex-col items-center justify-center w-full h-full p-4">
+<section class="flex flex-col items-center w-full h-screen p-4 justify-evenly">
 	{#if loading}
         <h1 class="text-6xl">Loading...</h1>
     {:else}
