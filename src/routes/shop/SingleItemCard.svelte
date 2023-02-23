@@ -1,7 +1,10 @@
 <script lang="ts">
+	import cart from '$lib/scripts/cart';
 	import type { Item } from '$lib/scripts/types';
 
 	export let item: Item;
+
+	let quantity = 1;
 
 	const capitalize = (str: string) => {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -21,6 +24,27 @@
 			<p class="px-4 text-2xl">
 				{item.description}
 			</p>
+			<div class="flex flex-col w-full gap-4">
+				<div class="flex flex-row items-center w-full gap-4 justify-evenly">
+					<label for="quantity" class="text-2xl">Quantity</label>
+					<input
+						type="number"
+						id="quantity"
+						name="quantity"
+						min="1"
+						max={item.quantity - cart.getQuantity(item.name)}
+						bind:value={quantity}
+						class="w-1/2 px-4 py-2 text-2xl text-black border-2 border-purple-800 rounded-3xl"
+					/>
+				</div>
+				<button
+				 class="w-full px-4 py-2 text-2xl bg-purple-600 rounded-3xl"
+				 on:click={() => {
+					 console.log(quantity);
+					 cart.addItem(item, quantity);
+				 }}
+				 >Add to Cart</button>
+			</div>
 		</div>
 	</div>
 </div>
