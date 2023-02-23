@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.svelte"
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '4xl': '2rem',
+      },
+    },
   },
   plugins: [],
 }

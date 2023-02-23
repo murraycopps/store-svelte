@@ -15,7 +15,7 @@
     <div />
     <div />
     <div />
-    <div class="z-10 text-2xl link">Shop</div>
+    <p class="z-10 text-2xl link">Shop</p>
 </a>
 
 <style>
@@ -58,7 +58,7 @@
 		grid-row: 1 / 2;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(1):hover ~ div {
+	.link-container > div:nth-child(1):hover ~ p {
 		--rotate-x: 15deg;
 		--rotate-y: -15deg;
 	}
@@ -66,7 +66,7 @@
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 	}
-	.link-container > div:nth-child(2):hover ~ div {
+	.link-container > div:nth-child(2):hover ~ p {
 		--rotate-x: 15deg;
 		--rotate-y: -5deg;
 	}
@@ -75,7 +75,7 @@
 		grid-row: 1 / 2;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(3):hover ~ div {
+	.link-container > div:nth-child(3):hover ~ p {
 		--rotate-x: 15deg;
 		--rotate-y: 5deg;
 	}
@@ -84,7 +84,7 @@
 		grid-row: 1 / 2;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(4):hover ~ div {
+	.link-container > div:nth-child(4):hover ~ p {
 		--rotate-x: 15deg;
 		--rotate-y: 15deg;
 	}
@@ -93,7 +93,7 @@
 		grid-row: 2 / 3;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(5):hover ~ div {
+	.link-container > div:nth-child(5):hover ~ p {
 		--rotate-x: 5deg;
 		--rotate-y: -15deg;
 	}
@@ -102,7 +102,7 @@
 		grid-row: 2 / 3;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(6):hover ~ div {
+	.link-container > div:nth-child(6):hover ~ p {
 		--rotate-x: 5deg;
 		--rotate-y: -5deg;
 	}
@@ -111,7 +111,7 @@
 		grid-row: 2 / 3;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(7):hover ~ div {
+	.link-container > div:nth-child(7):hover ~ p {
 		--rotate-x: 5deg;
 		--rotate-y: 5deg;
 	}
@@ -120,7 +120,7 @@
 		grid-row: 2 / 3;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(8):hover ~ div {
+	.link-container > div:nth-child(8):hover ~ p {
 		--rotate-x: 5deg;
 		--rotate-y: 15deg;
 	}
@@ -129,7 +129,7 @@
 		grid-row: 3 / 4;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(9):hover ~ div {
+	.link-container > div:nth-child(9):hover ~ p {
 		--rotate-x: -5deg;
 		--rotate-y: -15deg;
 	}
@@ -138,7 +138,7 @@
 		grid-row: 3 / 4;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(10):hover ~ div {
+	.link-container > div:nth-child(10):hover ~ p {
 		--rotate-x: -5deg;
 		--rotate-y: -5deg;
 	}
@@ -147,7 +147,7 @@
 		grid-row: 3 / 4;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(11):hover ~ div {
+	.link-container > div:nth-child(11):hover ~ p {
 		--rotate-x: -5deg;
 		--rotate-y: 5deg;
 	}
@@ -156,7 +156,7 @@
 		grid-row: 3 / 4;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(12):hover ~ div {
+	.link-container > div:nth-child(12):hover ~ p {
 		--rotate-x: -5deg;
 		--rotate-y: 15deg;
 	}
@@ -165,7 +165,7 @@
 		grid-row: 4 / 5;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(13):hover ~ div {
+	.link-container > div:nth-child(13):hover ~ p {
 		--rotate-x: -15deg;
 		--rotate-y: -15deg;
 	}
@@ -174,7 +174,7 @@
 		grid-row: 4 / 5;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(14):hover ~ div {
+	.link-container > div:nth-child(14):hover ~ p {
 		--rotate-x: -15deg;
 		--rotate-y: -5deg;
 	}
@@ -183,7 +183,7 @@
 		grid-row: 4 / 5;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(15):hover ~ div {
+	.link-container > div:nth-child(15):hover ~ p {
 		--rotate-x: -15deg;
 		--rotate-y: 5deg;
 	}
@@ -192,7 +192,7 @@
 		grid-row: 4 / 5;
 		z-index: 100;
 	}
-	.link-container > div:nth-child(16):hover ~ div {
+	.link-container > div:nth-child(16):hover ~ p {
 		--rotate-x: -15deg;
 		--rotate-y: 15deg;
 	}
