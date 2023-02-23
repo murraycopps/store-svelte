@@ -14,15 +14,19 @@ export default class cart {
                 cartQuantity: quantity
             });
         }
+        this.addToStorage();
     }
 
     static removeItem(name: string) {
         this.items = this.items.filter(item => item.name !== name);
+        this.addToStorage();
     }
     static getItems() {
+        this.getFromStorage();
         return this.items;
     }
     static getItem(name: string) {
+        this.getFromStorage();
         return this.items.find(item => item.name === name);
     }
 
@@ -45,6 +49,7 @@ export default class cart {
         if (item && item.cartQuantity < item.quantity) {
             item.cartQuantity++;
         }
+        this.addToStorage();
     }
     static decreaseQuantity(name: string) {
         const item = this.items.find(item => item.name === name);
@@ -54,11 +59,23 @@ export default class cart {
                 this.removeItem(name);
             }
         }
+        this.addToStorage();
     }
     static getTotalPrice(){
         return 1.06 * this.items.reduce((total, item) => total + item.price * item.cartQuantity, 0);
     }
     static clearCart() {
         this.items = [];
+        this.addToStorage();
+    }
+
+    static addToStorage() {
+        localStorage.setItem('cart', JSON.stringify(this.items));
+    }
+    static getFromStorage() {
+        const items = localStorage.getItem('cart');
+        if (items) {
+            this.items = JSON.parse(items);
+        }
     }
 }
