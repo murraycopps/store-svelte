@@ -11,7 +11,7 @@
 
 	const checkout = async () => {
 		loading = true;
-		const res = await fetch(`http://localhost:3000/checkout`, {
+		const res = await fetch(`https://store-server-murraycopps.vercel.app/checkout`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
