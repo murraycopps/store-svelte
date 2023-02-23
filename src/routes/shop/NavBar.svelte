@@ -4,7 +4,6 @@
 	let open = false;
 
 	const close = () => {
-		console.log('closing');
 		open = false;
 	};
 </script>
@@ -13,7 +12,6 @@
 	class={`flex flex-col justify-between w-8 h-8 py-1 z-50 ${open && 'open'}`}
 	id="nav-button"
 	on:click={() => {
-		console.log('click');
 		open = !open;
 	}}
 >

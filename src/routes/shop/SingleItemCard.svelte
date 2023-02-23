@@ -1,6 +1,7 @@
 <script lang="ts">
 	import cart from '$lib/scripts/cart';
 	import type { Item } from '$lib/scripts/types';
+	import { goto } from '$app/navigation';
 
 	export let item: Item;
 
@@ -40,8 +41,8 @@
 				<button
 				 class="w-full px-4 py-2 text-2xl bg-purple-600 rounded-3xl"
 				 on:click={() => {
-					 console.log(quantity);
 					 cart.addItem(item, quantity);
+					 goto('/shop/cart');
 				 }}
 				 >Add to Cart</button>
 			</div>

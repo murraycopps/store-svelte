@@ -1,4 +1,4 @@
-type Item = {
+interface Item {
     _id: string;
     url: string;
     name: string;
@@ -11,10 +11,8 @@ type Item = {
     image: string;
 }
 
-type CartItem = {
-    name: string;
-    price: number;
-    quantity: number;
+interface CartItem extends Item {
+    cartQuantity: number;
 }
 
 export type { Item, CartItem };

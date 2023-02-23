@@ -7,23 +7,25 @@ export default class cart {
     static addItem(item: Item, quantity: number) {
         const cartItem = this.items.find(cartItem => cartItem.name === item.name);
         if (cartItem) {
-            cartItem.quantity += quantity;
+            cartItem.cartQuantity += quantity;
         } else {
             this.items.push({
-                name: item.name,
-                price: item.price,
-                quantity: quantity
+                ...item,
+                cartQuantity: quantity
             });
         }
-        console.log(this.items);
     }
 
     static removeItem(name: string) {
-        this.items.filter(item => item.name !== name);
+        this.items = this.items.filter(item => item.name !== name);
     }
     static getItems() {
         return this.items;
     }
+    static getItem(name: string) {
+        return this.items.find(item => item.name === name);
+    }
+
     static getTotal() {
         let total = 0;
         this.items.forEach(item => {
@@ -37,5 +39,23 @@ export default class cart {
             return item.quantity;
         }
         return 0;
+    }
+    static increaseQuantity(name: string) {
+        const item = this.items.find(item => item.name === name);
+        if (item && item.cartQuantity < item.quantity) {
+            item.cartQuantity++;
+        }
+    }
+    static decreaseQuantity(name: string) {
+        const item = this.items.find(item => item.name === name);
+        if (item) {
+            item.cartQuantity--;
+            if (item.cartQuantity === 0) {
+                this.removeItem(name);
+            }
+        }
+    }
+    static clearCart() {
+        this.items = [];
     }
 }
