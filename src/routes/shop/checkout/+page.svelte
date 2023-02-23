@@ -11,28 +11,33 @@
 
 	const checkout = async () => {
 		loading = true;
-		const res = await fetch(`https://store-server-murraycopps.vercel.app/checkout`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				items: cart.getItems()
-			})
-		});
+		try {
+			const res = await fetch(`https://store-server-murraycopps.vercel.app/checkout`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					items: cart.getItems()
+				})
+			});
 
-		const data = await res.json();
+			const data = await res.json();
 
-		cart.clearCart();
+			cart.clearCart();
 
-		goto(`/shop/checkout/${data.success ? 'success' : 'failure'}`);
+            goto(`/shop/checkout/${data.success ? 'success' : 'failure'}`);
+		} catch (err) {
+			console.log(err);
+			goto('/shop/checkout/failure');
+		}
 	};
 </script>
 
 <section class="flex flex-col items-center w-full h-screen p-4 justify-evenly">
 	{#if loading}
-        <h1 class="text-6xl">Loading...</h1>
-    {:else}
+		<h1 class="text-6xl">Loading...</h1>
+	{:else}
 		<h1 class="text-6xl">Checkout</h1>
 		<h2 class="text-3xl font-bold">Total: ${price}</h2>
 		<button
