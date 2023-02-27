@@ -12,7 +12,11 @@
 	};
 </script>
 
-<div class={`grid lg:grid-cols-2 grid-cols-1 p-4 ${item.quantity > 0 ? "bg-purple-800" : "bg-red-500"} width-clamp rounded-4xl`}>
+<div
+	class={`grid lg:grid-cols-2 grid-cols-1 p-4 ${
+		item.quantity > 0 ? 'bg-purple-800' : 'bg-red-500'
+	} width-clamp rounded-4xl`}
+>
 	<img src={item.image} alt={item.name} class={`object-fit rounded-3xl w-full`} />
 	<div class="flex flex-col justify-between w-full h-full gap-4 p-4 text-white">
 		<div class="flex flex-col w-full gap-8 text-center">

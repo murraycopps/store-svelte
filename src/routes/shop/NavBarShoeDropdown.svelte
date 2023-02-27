@@ -33,7 +33,7 @@
 </div>
 
 <style>
-	.open{
+	.open {
 		padding-bottom: 1rem;
 	}
 	.open > div {
@@ -47,6 +47,6 @@
 		transition: transform 0.3s ease-in-out;
 	}
 	.wider {
-		width: calc(3 / 4 * (100% + 2rem))
+		width: calc(3 / 4 * (100% + 2rem));
 	}
 </style>

@@ -5,6 +5,6 @@
 	let { item } = data;
 </script>
 
-<div
-    class="flex items-center justify-center w-full h-screen p-4 bg-gray-100"
-><SingleItemCard {item} /></div>
+<div class="flex items-center justify-start w-full h-screen p-4 bg-gray-100 sm:justify-center">
+	<SingleItemCard {item} />
+</div>

@@ -4,7 +4,7 @@
 
 	export let open: boolean;
 	export let close: () => void;
-	let dropdownOpen: boolean = false;
+	let dropdownOpen = false;
 	let toggleDropdown = () => {
 		dropdownOpen = !dropdownOpen;
 	};

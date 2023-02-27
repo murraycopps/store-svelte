@@ -6,7 +6,7 @@
 
 	export let data: { items: Item[] };
 	export let type: string;
-	export let oneRow: boolean = false;
+	export let oneRow = false;
 
 	const capitalize = (str: string) => {
 		return str.charAt(0).toUpperCase() + str.slice(1);
@@ -48,7 +48,7 @@
 
 <style lang="postcss">
 	.section-label {
-		--slant-amount: 5rem;
+		--slant-amount: clamp(2rem, 1vw, 5rem);
 		clip-path: polygon(
 			var(--slant-amount) 0%,
 			100% 0%,

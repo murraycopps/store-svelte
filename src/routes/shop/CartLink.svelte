@@ -7,15 +7,15 @@
 </a>
 
 <style>
-    a {
-        transition: transform 0.3s ease-in-out;
-    }
+	a {
+		transition: transform 0.3s ease-in-out;
+	}
 
-    a:hover {
-        transform: scale(1.1);
-    }
+	a:hover {
+		transform: scale(1.1);
+	}
 
-    img {
-        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
-    }
+	img {
+		filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+	}
 </style>

@@ -22,8 +22,8 @@
 			image="https://tracksmith-media.imgix.net/Summer22-Mens-OTQ_Singlet_with_Woven_Label.png?bg=f8f8f8&fit=fillmax&w=1080&h=1080"
 		/>
 	</div>
-	
-	<ItemList data={data} type="shoes" oneRow />
-	<ItemList data={data} type="gear" oneRow />
-	<ItemList data={data} type="clothes" oneRow />
+
+	<ItemList {data} type="shoes" oneRow />
+	<ItemList {data} type="gear" oneRow />
+	<ItemList {data} type="clothes" oneRow />
 </div>

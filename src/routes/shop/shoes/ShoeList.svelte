@@ -6,7 +6,7 @@
 
 	export let data: { items: Item[] };
 	export let type: string;
-	export let oneRow: boolean = false;
+	export let oneRow = false;
 
 	const capitalize = (str: string) => {
 		return str.charAt(0).toUpperCase() + str.slice(1);

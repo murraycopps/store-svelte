@@ -1,25 +1,25 @@
 <a href="/shop" class="grid grid-cols-4 grid-rows-4 link-container">
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <div />
-    <p class="z-10 text-2xl link">Shop</p>
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<div />
+	<p class="z-10 text-2xl link">Shop</p>
 </a>
 
 <style>
-    .link {
+	.link {
 		--rotate-x: 0deg;
 		--rotate-y: 0deg;
 		background: rgb(34, 193, 195);
@@ -197,4 +197,3 @@
 		--rotate-y: 15deg;
 	}
 </style>
-

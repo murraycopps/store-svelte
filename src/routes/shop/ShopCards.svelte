@@ -14,13 +14,12 @@
 </a>
 
 <style>
-    img{
-        filter: blur(.4rem) brightness(0.65);
-    }
+	img {
+		filter: blur(0.4rem) brightness(0.65);
+	}
 
-    a:hover > img,
-    a:focus > img{
-        filter: blur(.3rem) brightness(0.75) saturate(1.5);
-    }
-
+	a:hover > img,
+	a:focus > img {
+		filter: blur(0.3rem) brightness(0.75) saturate(1.5);
+	}
 </style>

@@ -88,7 +88,6 @@
 </div>
 
 <style>
-
 	.shoes {
 		aspect-ratio: 2;
 	}

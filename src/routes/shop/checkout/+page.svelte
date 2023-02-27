@@ -26,7 +26,7 @@
 
 			cart.clearCart();
 
-            goto(`/shop/checkout/${data.success ? 'success' : 'failure'}`);
+			goto(`/shop/checkout/${data.success ? 'success' : 'failure'}`);
 		} catch (err) {
 			console.log(err);
 			goto('/shop/checkout/failure');
