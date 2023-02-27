@@ -48,7 +48,7 @@
 
 <style lang="postcss">
 	.section-label {
-		--slant-amount: 5rem;
+		--slant-amount: clamp(2rem, 1vw, 5rem);
 		clip-path: polygon(
 			var(--slant-amount) 0%,
 			100% 0%,
