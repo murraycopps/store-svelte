@@ -1,5 +1,4 @@
 <script lang="ts">
-	import cart from '$lib/scripts/cart';
 	import type { Item } from '$lib/scripts/types';
 
 	export let item: Item;
