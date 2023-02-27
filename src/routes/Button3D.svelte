@@ -23,7 +23,7 @@
 		--rotate-x: 0deg;
 		--rotate-y: 0deg;
 		background: rgb(34, 193, 195);
-		background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+		background: radial-gradient( #52A371, #518156);
 		border-radius: 1rem;
 		padding: 1rem 8rem;
 		color: #fff;
@@ -41,13 +41,13 @@
 		position: absolute;
 		inset: -0.5rem -1rem;
 		border-radius: 1rem;
-		background: rgb(19, 179, 150);
+		background: #4ECA78;
 		transform: translateZ(-50px);
 	}
 	.link::before {
 		content: '';
 		position: absolute;
-		inset: 0.5rem;
+		inset: 0rem;
 		filter: blur(0.5rem);
 		border-radius: 1rem;
 		background: rgba(0, 0, 0, 0.5);

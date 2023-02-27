@@ -13,7 +13,7 @@
 		item.url
 	}`}
 	class={`relative flex flex-col items-center justify-between w-full h-full gap-4 p-4 text-white ${
-		item.quantity > 0 ? 'bg-purple-800' : 'bg-red-500'
+		item.quantity > 0 ? 'bg-casal-700' : 'bg-red-500'
 	} rounded-3xl`}
 >
 	{#if item.image}

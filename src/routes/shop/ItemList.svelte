@@ -35,7 +35,7 @@
 	});
 </script>
 
-<div class="p-8 text-4xl text-white bg-blue-600 section-label">
+<div class="p-8 text-4xl text-white bg-ocean-green-600 section-label">
 	<h2>{capitalize(type)}</h2>
 </div>
 <section class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
@@ -56,5 +56,9 @@
 			0% 100%
 		);
 		padding-left: calc(var(--slant-amount) + 1rem);
+	}
+	h2{
+		font-family: 'Roboto', sans-serif;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
 </style>

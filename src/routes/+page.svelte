@@ -8,7 +8,7 @@
 >
 	<img src={LandingImage} alt="" class="fixed w-screen h-screen cover opacity-20" />
 	<h1 class="z-10 py-2 text-6xl text-white sm:text-8xl md:text-9xl">Running Store</h1>
-	<p class="z-10 text-2xl">Shop our selection of running shoes, clothes, and gear</p>
+	<p class="z-10 text-3xl">Shop our selection of running shoes, clothes, and gear</p>
 	<Button3D />
 </section>
 
@@ -18,6 +18,15 @@
 	}
 	section {
 		background: radial-gradient(rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 1) 100%);
+	}
+	p{
+		color: #4ECA78;
+		text-shadow: black 0px 0px 10px;
+	}
+	h1{
+		color: #b1eec6;
+		text-shadow: black 0px 0px 20px;
+
 	}
 	/* h1 {
 		color: transparent;
