@@ -15,18 +15,18 @@
 <div
 	class={`grid lg:grid-cols-2 grid-cols-1 p-4 ${
 		item.quantity > 0 ? 'bg-purple-800' : 'bg-red-500'
-	} width-clamp rounded-4xl`}
+	} width-clamp rounded-4xl place-items-center`}
 >
-	<img src={item.image} alt={item.name} class={`object-fit rounded-3xl w-full`} />
+	<img src={item.image} alt={item.name} class={`object-fit rounded-3xl w-5/6 sm:w-full`} />
 	<div class="flex flex-col justify-between w-full h-full gap-4 p-4 text-white">
-		<div class="flex flex-col w-full gap-8 text-center">
-			<h2 class="text-4xl">{item.name}</h2>
-			<div class="grid w-full grid-cols-3 px-4 text-2xl">
+		<div class="flex flex-col w-full gap-4 text-center sm:gap-8">
+			<h2 class="text-3xl sm:text-4xl">{item.name}</h2>
+			<div class="grid w-full grid-cols-3 px-4 text-xl sm:text-2xl">
 				<p>${item.price}</p>
 				<p>{capitalize(item.type)}</p>
 				<p>{item.rating}/5</p>
 			</div>
-			<p class="px-4 text-2xl">
+			<p class="px-4 text-lg sm:text-2xl">
 				{item.description}
 			</p>
 			{#if item.quantity > 0}
