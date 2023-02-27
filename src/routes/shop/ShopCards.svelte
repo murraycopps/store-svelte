@@ -5,7 +5,7 @@
 	const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 </script>
 
-<a href={`/shop/${type}`} class="relative h-full">
+<a href={`/shop/${type}`} class="relative w-full aspect-square">
 	<img src={image} alt={type} class="object-cover bg-green-200 rounded-3xl aspect-square" />
 	<div class="absolute inset-0 flex flex-col items-center justify-center gap-4 p-4 text-white">
 		<h2 class="text-5xl">{capitalize(type)}</h2>

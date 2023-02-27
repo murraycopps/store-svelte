@@ -1,4 +1,5 @@
 <script lang="ts">
+	import cart from '$lib/scripts/cart';
 	import type { Item } from '$lib/scripts/types';
 
 	export let item: Item;
@@ -25,6 +26,12 @@
 			<p>${item.price}</p>
 			<p>{capitalize(item.type)}</p>
 			<p>{item.rating}/5</p>
+			<button
+				class="text-2xl bg-red-600 rounded-3xl"
+				on:click={() => {
+					cart.addItem(item, 1);
+				}}>cart</button
+			>
 		</div>
 	</div>
 </a>
