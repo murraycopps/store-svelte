@@ -57,7 +57,7 @@
 		);
 		padding-left: calc(var(--slant-amount) + 1rem);
 	}
-	h2{
+	h2 {
 		font-family: 'Roboto', sans-serif;
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}

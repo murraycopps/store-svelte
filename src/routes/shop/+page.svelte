@@ -3,6 +3,9 @@
 	import ItemList from './ItemList.svelte';
 	import ShopCards from './ShopCards.svelte';
 
+	import ShoeCardImage from '$lib/images/shoe-card.png';
+	console.log(ShoeCardImage);
+
 	export let data: { items: Item[] };
 </script>
 

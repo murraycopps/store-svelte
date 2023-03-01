@@ -23,7 +23,7 @@
 		--rotate-x: 0deg;
 		--rotate-y: 0deg;
 		background: rgb(34, 193, 195);
-		background: radial-gradient( #52A371, #518156);
+		background: radial-gradient(#52a371, #518156);
 		border-radius: 1rem;
 		padding: 1rem 8rem;
 		color: #fff;
@@ -41,7 +41,7 @@
 		position: absolute;
 		inset: -0.5rem -1rem;
 		border-radius: 1rem;
-		background: #4ECA78;
+		background: #4eca78;
 		transform: translateZ(-50px);
 	}
 	.link::before {

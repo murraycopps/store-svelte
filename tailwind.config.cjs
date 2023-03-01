@@ -15,7 +15,7 @@ module.exports = {
 					DEFAULT: '#4DC7B8',
 					// 50: '#CDEFED',
 					// 50: '#E6F7F6',
-					50: "#d5f1ef",
+					50: '#d5f1ef',
 					100: '#C1EBE9',
 					200: '#AAE4E0',
 					300: '#92DDD6',
@@ -39,7 +39,7 @@ module.exports = {
 					800: '#2E704F',
 					900: '#255B42'
 				},
-				'casal': {
+				casal: {
 					DEFAULT: '#2C6D66',
 					50: '#53B99D',
 					100: '#4AB59A',
@@ -51,7 +51,7 @@ module.exports = {
 					700: '#1B4140',
 					800: '#122B2B',
 					900: '#091516'
-				},
+				}
 			}
 		}
 	},

@@ -19,14 +19,13 @@
 	section {
 		background: radial-gradient(rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 1) 100%);
 	}
-	p{
-		color: #4ECA78;
+	p {
+		color: #4eca78;
 		text-shadow: black 0px 0px 10px;
 	}
-	h1{
+	h1 {
 		color: #b1eec6;
 		text-shadow: black 0px 0px 20px;
-
 	}
 	/* h1 {
 		color: transparent;

@@ -15,15 +15,15 @@
 		open = !open;
 	}}
 >
-	<span class="z-50 w-full h-1 bg-gray-800 rounded-full"/>
 	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" />
-	<span class="z-50 w-full h-1 bg-gray-800 rounded-full"/>
+	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" />
+	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" />
 </button>
 <NavBarContent {open} {close} />
 
 <style>
-	button{
-		background: rgba(227, 241, 241, 0.75);
+	button {
+		background: rgba(227, 241, 241, 0.6);
 	}
 	span {
 		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
