@@ -2,12 +2,13 @@
 	import CartImage from '$lib/images/cart.svg';
 </script>
 
-<a href="/shop/cart" class="fixed top-2 right-2">
+<a href="/shop/cart" class="fixed rounded-lg top-2 right-2">
 	<img src={CartImage} alt="cart" class="w-12 h-12" />
 </a>
 
 <style>
 	a {
+		background: rgba(227, 241, 241, 0.75);
 		transition: transform 0.3s ease-in-out;
 	}
 

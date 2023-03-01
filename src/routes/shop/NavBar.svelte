@@ -9,19 +9,22 @@
 </script>
 
 <button
-	class={`flex flex-col justify-between w-8 h-8 py-1 z-50 ${open && 'open'}`}
+	class={`flex flex-col justify-between w-10 px-1 rounded-lg h-10 py-2 z-50 ${open && 'open'}`}
 	id="nav-button"
 	on:click={() => {
 		open = !open;
 	}}
 >
-	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
-	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
-	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" class:open />
+	<span class="z-50 w-full h-1 bg-gray-800 rounded-full"/>
+	<span class="z-50 w-full h-1 bg-gray-800 rounded-full" />
+	<span class="z-50 w-full h-1 bg-gray-800 rounded-full"/>
 </button>
 <NavBarContent {open} {close} />
 
 <style>
+	button{
+		background: rgba(227, 241, 241, 0.75);
+	}
 	span {
 		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
 			background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -30,12 +33,8 @@
 
 	.open > span {
 		box-shadow: none;
-	}
-
-	.open {
 		background-color: white;
 	}
-
 	.open > span:nth-child(1) {
 		transform: translateY(0.6rem) rotate(45deg);
 	}
