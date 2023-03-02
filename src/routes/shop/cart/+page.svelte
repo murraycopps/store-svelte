@@ -17,7 +17,7 @@
 				{#each cartItems as item}
 					<CartItemCard {item} {update} />
 				{/each}
-				<div class="flex items-center w-1/2 p-4 bg-gray-100 rounded-lg justify-evenly">
+				<div class="grid grid-cols-2 place-items-center w-1/2 p-4 bg-gray-100 rounded-lg gap-4 min-w-fit">
 					<h2 class="text-xl font-bold">Total:</h2>
 					<h2 class="text-xl font-bold">
 						${(
