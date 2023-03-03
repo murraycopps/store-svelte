@@ -3,6 +3,10 @@
 	import ShoeList from './ShoeList.svelte';
 	import ShoeType from './ShoeType.svelte';
 
+	import TrailShoe from '$lib/images/cards/trail-shoe.jpeg';
+	import RoadShoe from '$lib/images/cards/road-shoe.jpeg';
+	import Spikes from '$lib/images/cards/spikes.jpeg';
+
 	export let data: { items: Item[] };
 </script>
 
@@ -11,12 +15,12 @@
 	<div class="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 md:grid-cols-3">
 		<ShoeType
 			type="trail"
-			image="https://www.tradeinn.com/f/13858/138584722/altra-mont-blanc-trail-running-shoes.jpg"
+			image={TrailShoe}
 		/>
-		<ShoeType type="road" image="https://wp.fittedcdn.com/assets/1119394-BFPA.1.jpeg" />
+		<ShoeType type="road" image={RoadShoe} />
 		<ShoeType
 			type="spikes"
-			image="https://3610efad3cf0672f75ac-af31fb52ce4291c72fea245835348588.ssl.cf1.rackcdn.com/835997-017.jpg"
+			image={Spikes}
 		/>
 	</div>
 	<div class="flex flex-col gap-8">
