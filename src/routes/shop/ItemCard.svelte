@@ -41,6 +41,6 @@
 	}
 
 	a {
-		max-width: 400px;
+		max-width: 500px;
 	}
 </style>
